@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Work+Sans&family=Yellowtail&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: -12px;
+    padding-right: -12px;
+}
+
+
+
+span {
+
+    font-weight: 200;
+}
+
+.fs-26 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 116.02%;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+.bg-blue {
+    background-color: blue;
+    min-height: 100vh;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align_item_center {
+    align-items: center;
+}
+
+.gap {
+    gap: 30px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+nav div ul li a {
+    color: white;
+}
+
+.bc {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: #4b8dff;
+    border-radius: 210px;
+    color: #FFFFFF;
+    border: 2px solid white;
+    display: inline-block;
+}
+
+
+
+.z-index {
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    label[for="iconbar"] {
+        width: 35px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    label[for="iconbar"]>span {
+        width: 100%;
+        height: 4px;
+        background-color: gold;
+    }
+
+    .sm-screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        pointer-events: none;
+        opacity: 0;
+        transition: all 200ms linear;
+    }
+
+    input[type="checkbox"]:checked+ul.sm-screen {
+        left: 0;
+        pointer-events: all;
+        opacity: 1;
+    }
+}
